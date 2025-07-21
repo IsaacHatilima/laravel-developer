@@ -32,7 +32,8 @@ class GolferFactory extends Factory
     {
         if (is_null(self::$debitorCounter)) {
             // Initialize the debitor counter to the maximum existing value or 1 if none exist
-            self::$debitorCounter = Golfer::max('debitor_account') ?? 1;
+            // self::$debitorCounter = Golfer::max('debitor_account') ?? 1;
+            self::$debitorCounter = (int) (Golfer::max('debitor_account') ?? 0) + 1;
         }
 
         return [
