@@ -3,7 +3,8 @@
 
 # Clubgolf Testaufgabe 2025
 
-Vielen Dank für Deine Zeit. Wie angekündigt ist hier die kleine Testaufgabe, um zu sehen wie Du ähnliche Aufgaben lösen würdest. 
+Vielen Dank für Deine Zeit. Wie angekündigt ist hier die kleine Testaufgabe, um zu sehen wie Du ähnliche Aufgaben lösen
+würdest.
 
 > [!CAUTION]
 > Bitte investiere nicht mehr als 30 minuten Coding.
@@ -22,7 +23,8 @@ Vielen Dank für Deine Zeit. Wie angekündigt ist hier die kleine Testaufgabe, u
     - `./vendor/bin/sail up -d`
     - `./vendor/bin/sail artisan key:generate`
     - `./vendor/bin/sail artisan migrate`
-3) Nun kannst du auf der Seite [http://laravel.test](http://laravel.test) (Fallback: [http://127.0.0.1](http://127.0.0.1) ) die Startseite einer neuen Laravel Instanz sehen
+3) Nun kannst du auf der Seite [http://laravel.test](http://laravel.test) (
+   Fallback: [http://127.0.0.1](http://127.0.0.1) ) die Startseite einer neuen Laravel Instanz sehen
 
 ## Aufgaben
 
@@ -49,13 +51,16 @@ Stelle sicher, dass der `GolferSeeder` für den `debitor_account` fortlaufende N
 
 ### Task 2
 
-Egal wie oft Du den `GolferSeeder` ausführst, soll sichergestellt sein, dass jeder `debitor_account` nur einmal vergeben wird.
+Egal wie oft Du den `GolferSeeder` ausführst, soll sichergestellt sein, dass jeder `debitor_account` nur einmal vergeben
+wird.
 
-Der `GolferSeeder` soll für den `debitor_account` fortlaufende Nummern vergeben, die an die bereits erstellten `debitor_account` anknüpfen.
+Der `GolferSeeder` soll für den `debitor_account` fortlaufende Nummern vergeben, die an die bereits erstellten
+`debitor_account` anknüpfen.
 
 ### Task 3
 
-Erstelle einen API-Endpunkt der für zwei Koordinaten (bspw. Berlin: `52.5243` & `13.4105`) die 500 am nächsten wohnenden Golfer ausgibt.
+Erstelle einen API-Endpunkt der für zwei Koordinaten (bspw. Berlin: `52.5243` & `13.4105`) die 500 am nächsten wohnenden
+Golfer ausgibt.
 
 ### Task 4
 
@@ -64,7 +69,7 @@ Erstelle einen weiteren Endpunkt der das Ergebnis aus Task 3 als CSV Datei zum D
 ---
 
 > [!NOTE]
-> ENGLISH 
+> ENGLISH
 
 # Clubgolf Test 2025
 
@@ -87,7 +92,8 @@ Thank you very much for your time. As promised here is a small test task to see 
     - `./vendor/bin/sail up -d`
     - `./vendor/bin/sail artisan key:generate`
     - `./vendor/bin/sail artisan migrate`
-3) Now [http://laravel.test](http://laravel.test) (fallback: [http://127.0.0.1](http://127.0.0.1) ) is available as home of this Laravel instance.
+3) Now [http://laravel.test](http://laravel.test) (fallback: [http://127.0.0.1](http://127.0.0.1) ) is available as home
+   of this Laravel instance.
 
 ## Aufgaben
 
@@ -116,11 +122,14 @@ Ensure that the `GolferSeeder` uses consecutive numbers for the `debitor_account
 
 No matter how often you run the `GolferSeeder`, you should ensure that each `debtor_account` is assigned only once.
 
-The `GolferSeeder` should assign consecutive numbers to the `debtor_account` that are linked to the previously created `debtor_accounts`.
+The `GolferSeeder` should assign consecutive numbers to the `debtor_account` that are linked to the previously created
+`debtor_accounts`.
 
 ### Task 3
 
 Create an API endpoint that returns the 500 nearest golfers for two coordinates (e.g. Berlin: `52.5243` & `13.4105`).
+
+URL: `http://127.0.0.1:8000/api/golfers?latitude=<LATITUDE>&longitude=<LONGITUDE>`
 
 ### Task 4
 
