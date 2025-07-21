@@ -134,3 +134,5 @@ URL: `http://127.0.0.1:8000/api/golfers?latitude=<LATITUDE>&longitude=<LONGITUDE
 ### Task 4
 
 Create another endpoint that offers the result from Task 3 as a CSV file for download.
+
+URL: `http://127.0.0.1:8000/api/golfers/download?latitude=<LATITUDE>&longitude=<LONGITUDE>`

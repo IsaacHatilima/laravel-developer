@@ -10,3 +10,6 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/golfers', [GolferController::class, 'index'])
     ->name('golfers.index');
+
+Route::get('/golfers/download', [GolferController::class, 'download'])
+    ->name('golfers.download');
