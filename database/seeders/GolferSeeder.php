@@ -10,7 +10,7 @@ class GolferSeeder extends Seeder
     public function run(): void
     {
         Golfer::factory()
-            ->count(10)
+            ->count(100)
             ->create();
     }
 }
