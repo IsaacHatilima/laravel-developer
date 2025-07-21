@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class GolferRepository
 {
     /**
-     * Returns all member of staffs
+     * Returns all member of golfers
      *
      *
      * @return LengthAwarePaginator<int, Golfer>
@@ -42,7 +42,7 @@ class GolferRepository
     }
 
     /**
-     * Returns all member of staffs
+     * Returns all member of golfers
      *
      *
      * @return Collection<int, Golfer>
