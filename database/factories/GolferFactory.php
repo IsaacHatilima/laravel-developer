@@ -12,7 +12,7 @@ use Random\RandomException;
  */
 class GolferFactory extends Factory
 {
-    protected static int $debitorCounter = 1; // Start from 1 to avoid zero debitor accounts
+    protected static ?int $debitorCounter = null;
 
     /**
      * Define the model's default state.
@@ -30,6 +30,11 @@ class GolferFactory extends Factory
      */
     public function definition(): array
     {
+        if (is_null(self::$debitorCounter)) {
+            // Initialize the debitor counter to the maximum existing value or 0 if none exist
+            self::$debitorCounter = Golfer::max('debitor_account') ?? 0;
+        }
+
         return [
             'debitor_account' => self::$debitorCounter++,
             'name' => fake()->name(),
